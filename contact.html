@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Info</title>
+  </head>
+  <body>
+    <h2>My Contacts Page</h2>
+    <p>If you want to connect to me and discuss something, Kindly, provide your info</p>
+    <form action="mailto:mandargade001@gmail.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Personalia</legend>
+        <label for="fname">Enter First Name : </label>
+        <input type="text" id="fname" name="fname" autofocus autocomplete required>
+        <br><br>
+        <label for="lname">Enter Last Name : </label>
+        <input type="text" id="lname" name="lname" autocomplete required>
+        <br><br>
+        <label for="yourEmail">Enter Email : </label>
+        <input type="email" id="yourEmail" name="yourEmail" placeholder="eg. xyz@gmail.com" width="40" autocomplete required>
+        <br><br>
+        <label for="sex">Enter Sex : </label>
+        <select class="" id="sex" name="sex">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+        <br><br>
+        <label for="age">Select Age Group : </label>
+        <input type="radio" id="below 18" name="age" value="below 18"><label for="below 18">below 18</label>
+        <input type="radio" id="above 18" name="age" value="above 18"><label for="above 18">above 18</label>
+      </fieldset>
+      <br>
+      <label for="query">Enter Your Query : </label>
+      <br><br>
+      <textarea id="query" name="query" rows="8" cols="50"></textarea>
+      <br>
+      <br>
+      <input type="reset" id="reset" name="reset">    <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+  </body>
+</html>
